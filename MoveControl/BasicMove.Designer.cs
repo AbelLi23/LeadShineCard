@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // BasicMove
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.Name = "BasicMove";
+            this.Text = "LS2410";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BasicMove_FormClosed);
+            this.Load += new System.EventHandler(this.BasicMove_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
